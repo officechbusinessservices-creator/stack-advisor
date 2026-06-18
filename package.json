@@ -1,0 +1,41 @@
+{
+  "name": "@engineeringmatrixexplorer/stack-advisor",
+  "version": "1.0.2",
+  "description": "MCP server — describe your project and get a recommended tech stack with reasoning",
+  "main": "dist/index.js",
+  "bin": {
+    "stack-advisor": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "stack",
+    "architecture",
+    "claude",
+    "ai",
+    "developer-tools"
+  ],
+  "author": "engineeringmatrixexplorer",
+  "license": "MIT",
+  "type": "commonjs",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}
